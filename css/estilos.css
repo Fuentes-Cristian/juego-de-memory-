@@ -1,0 +1,210 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #040536;
+}
+
+.section{
+    display: flex;
+}
+
+.cajaTitulo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .cajaTitulo{
+        width: 100%;
+    }
+}
+
+.caja-titulos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width:768px) {
+    .caja-titulos{
+        width: 100%;
+    }
+}
+
+
+.caja-titulo-memory-game{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:768px) {
+    .caja-titulo-memory{
+        width: 100%;
+        background-color: #009a4a;
+    }
+}
+
+.titulo-memory-game{
+    font-family: Montserrat Semibold, sans-serif;
+    font-size: 8rem;
+    color: #f19cc3;
+}
+@media screen and (max-width:768px) {
+    .titulo-memory-game{
+        width: 100%;
+        font-size: 3rem;
+        text-align: center;
+
+    }
+}
+
+.caja-titulo-by-cristian{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-cristian{
+    font-family: Montserrat Semibold, sans-serif;
+    font-size: 2rem;
+    color: #f19cc3;
+}
+
+.caja-tiempo-general{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-tiempo{
+    font-size:1rem;
+    color: rgba(166, 9, 9, 0.772);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 50;
+    font-stretch:semi-condensed;
+    
+}
+.minutos{
+    font-size:2rem;
+    color: darkslategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    font-weight: 50;
+    font-stretch:semi-condensed;
+}
+
+.mesa{
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+    .mesa{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.centrarTarjeta{
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #DFFF80;
+    border-radius: 0.6rem;
+    background-color:#040536 ;
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+
+
+.tarjetaContenido{
+   font-size: 1.5rem;
+    transform: rotateY(-180deg);
+    backface-visibility:hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.centrarTarjeta.ver{
+    transform: rotateY(-180deg);
+}
+
+
+@keyframes error {
+    10%,
+    90%{
+        transform: rotateY(-180deg) translateX(-1px);
+    }
+    20%,
+    80%{
+        transform: rotateY(-180deg) translateX(2px);
+    }
+    30%,
+    50%,
+    70%{
+        transform: rotateY(-180deg) translateX(-4px);
+    }
+    40%,
+    60%{
+        transform: rotateY(-180deg) translateX(4px);
+    }
+    
+}
+
+.error{
+    animation: error 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.acertaste{
+    opacity: 0;
+} 
+
+.caja-cronometro{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ 
+.btn-reiniciar-js{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    height: 2.5rem;
+    font-weight: 100;
+    background-color: rgba(95, 52, 226, 0.809);
+    border-radius: 3px;
+    text-align: center;
+}

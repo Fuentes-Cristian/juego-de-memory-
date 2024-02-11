@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <section class="section">
+
+        <!--CAJA DE CRONOMETRO-->
+        <div class="caja-tiempo-general">
+            <h4 class="titulo-tiempo">Tiempo</h4>
+    
+            <div class="caja-cronometro">
+                <span id="minutos" class="minutos">00</span>:<span id="segundos" class="minutos">00</span>
+            </div>
+        </div>
+
+        <!--CAJA DE MOVIMIENTOS-->
+        <div class="caja-tiempo-general">
+            <h4 class="titulo-tiempo">Toques</h4>
+    
+            <div class="caja-cronometro">
+                <span id="mov" class="minutos">00</span>/<span id="movimientos" class="minutos">30</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="cajaTitulo">
+        <div class="caja-titulos">
+            <div class="caja-titulo-memory-game">
+                <h1 class="titulo-memory-game">MEMORY GAME</h1>
+            </div>
+            <div class="caja-titulo-by-cristian">
+                <h1 class="titulo-cristian">by Cristian Fuentes</h1>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mesa" class="mesa">
+        <!--contenido dinamico-->
+    </div>
+
+    <div>
+        <audio src="./sonidos-memory/acierto.mp3"id="acierto"preload="auto"></audio>
+        <audio src="./sonidos-memory/error.mp3" id="error" preload="auto"</audio>
+    </div>
+
+ 
+
+     <script src="./js/vars-globales.js"></script>
+     <script src="./js/acierto-error.js"></script>
+     <script src="./js/comparar-ver.js"></script>
+     <script src="./js/baraja-reparte.js"></script>
+     <script src="./js/cronometro.js"></script>
+     <script src="./js/contadorMov.js"></script>
+     <script src="./js/iniciar.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
